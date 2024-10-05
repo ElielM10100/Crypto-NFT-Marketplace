@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto NFT Marketplace</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Crypto NFT Marketplace</div>
+            <input type="text" class="search-bar" placeholder="Search NFTs...">
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#nfts">Popular Artwork</a></li>
+                <li><a href="#collectors">Top Collectors</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#subscribe">Subscribe</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h1>Discover Exclusive NFTs</h1>
+                <p>Join our community and explore the world of digital assets.</p>
+                <button class="cta-button">Get Started</button>
+            </div>
+            <div class="hero-image">
+                <img src="assets/Hero Header.png" alt="Crypto Hero">
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2>About Us</h2>
+            <p>We provide the best digital assets and NFT marketplace for collectors and creators.</p>
+            <button class="cta-button">Learn More</button>
+        </section>
+
+        <section id="nfts" class="nfts-section">
+            <h2>Popular Artwork</h2>
+            <div class="nft-gallery">
+                <div class="nft-item" onclick="showDetails('NFT 1')">
+                    <img src="assets/Card NFT 01.png" alt="NFT 1">
+                    <h3>NFT 1</h3>
+                    <p>Description of NFT 1.</p>
+                    <button class="view-details">View Details</button>
+                </div>
+                <div class="nft-item" onclick="showDetails('NFT 2')">
+                    <img src="assets/Card NFT 02.png" alt="NFT 2">
+                    <h3>NFT 2</h3>
+                    <p>Description of NFT 2.</p>
+                    <button class="view-details">View Details</button>
+                </div>
+                <div class="nft-item" onclick="showDetails('NFT 3')">
+                    <img src="assets/Card NFT 03.png" alt="NFT 3">
+                    <h3>NFT 3</h3>
+                    <p>Description of NFT 3.</p>
+                    <button class="view-details">View Details</button>
+                </div>
+                <div class="nft-item" onclick="showDetails('NFT 4')">
+                    <img src="assets/Card NFT 04.png" alt="NFT 4">
+                    <h3>NFT 4</h3>
+                    <p>Description of NFT 4.</p>
+                    <button class="view-details">View Details</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="collectors" class="collectors-section">
+            <h2>Top Collectors This Week</h2>
+            <div class="collectors-container">
+                <div class="collector-card">
+                    <img src="assets/Avatar.png" alt="Jhon" class="collector-image">
+                    <h3>1. Jhon</h3>
+                    <p>32.322,2 ETH</p>
+                    <p>@jhonNFT</p>
+                    <p>20%</p>
+                </div>
+                <div class="collector-card">
+                    <img src="assets/10.png" alt="Maria" class="collector-image">
+                    <h3>2. Maria</h3>
+                    <p>29.210,5 ETH</p>
+                    <p>@mariaNFT</p>
+                    <p>15%</p>
+                </div>
+                <div class="collector-card">
+                    <img src="assets/Avatar2.png" alt="Lucas" class="collector-image">
+                    <h3>3. Lucas</h3>
+                    <p>25.123,4 ETH</p>
+                    <p>@lucasNFT</p>
+                    <p>10%</p>
+                </div>
+                <div class="collector-card">
+                    <img src="assets/AvatarF.png" alt="Ana" class="collector-image">
+                    <h3>4. Ana</h3>
+                    <p>22.456,7 ETH</p>
+                    <p>@anaNFT</p>
+                    <p>8%</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="faq-section">
+            <h2>FAQ</h2>
+            <div class="faq-item">
+                <h3>What is an NFT?</h3>
+                <p>An NFT (non-fungible token) is a unique digital asset that represents ownership of a specific item or piece of content on the blockchain.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How do I buy an NFT?</h3>
+                <p>You can purchase NFTs through various marketplaces using cryptocurrencies like Ethereum.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Can I sell my NFTs?</h3>
+                <p>Yes, you can sell your NFTs on different platforms and marketplaces where they are supported.</p>
+            </div>
+        </section>
+
+        <section id="subscribe" class="subscribe-section">
+            <h2>Subscribe to Our Newsletter</h2>
+            <form id="subscribe-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+            <p id="subscribe-message"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Crypto NFT Marketplace. All rights reserved.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
